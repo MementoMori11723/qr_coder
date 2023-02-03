@@ -1,7 +1,10 @@
 import qrcode as qr
 import streamlit as st
 import validators as v
+from PIL import Image
 
+logo = Image.open('./favicon.png')
+st.set_page_config(page_title="QR Coder", page_icon=logo)
 st.title("QR code Generator")
 
 st.write("")
